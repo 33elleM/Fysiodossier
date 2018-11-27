@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">FysioDossier</string>
+
+    <string name="pwdname">Wachtwoord</string>
+
+    <string name="title_activity_patient_input">PatientInput</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- screeningsvragen -->
+
+    <string name="vraag1">Hebt u kort geleden een trauma (ongeluk, val) gehad?</string>
+
+    <string name="vraag2">Hebt u langer onverklaarbare koorts?</string>
+
+    <string name="vraag3">Bent u de laatste maand meer dan 5 kilogram gewicht verloren zonder daar iets aan
+te doen (lijnen, meer sporten)?</string>
+
+    <string name="vraag4">Gebruikt u al langere tijd corticosteroïden?</string>
+
+    <string name="vraag5">Hebt u constante pijn die niet afneemt in rust of bij verandering van houding?</string>
+
+    <string name="vraag6">Hebt u kanker (gehad)?</string>
+
+    <string name="vraag7">Hebt u een gevoel van algemeen onwelbevinden (moe, ziek)?</string>
+
+    <string name="vraag8">Hebt u ’s nachts pijn?</string>
+
+    <string name="vraag9">Hebt u prikkelingen of tintelingen, verminderd gevoel of krachtsverlies?</string>
+
+    <string name="On">Ja</string>
+    <string name="Off">Nee</string>
+
+
+    <!--Onderzoeksconclusie -->
+    <string name="conclusie">Conclusie van het onderzoek</string>
+
+    <string name="richtlijn_text">Behandelen volgens richtlijn:</string>
+
+
+</resources>

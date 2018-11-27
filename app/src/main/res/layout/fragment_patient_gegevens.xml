@@ -1,0 +1,165 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="patient" type="com.example.steri.fysiodossier.Patient"/>
+    </data>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.steri.fysiodossier.PatientGegevensFragment">
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/activity_patient_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        >
+
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zoek patiënt"
+            />
+
+        <Spinner
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nieuwe Patient"
+            android:layout_marginTop="24dp"
+            android:id="@+id/new_Pt_Button" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roepnaam"
+            android:text="@{patient.firstName}"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Achternaam"
+            android:text="@{patient.lastName}"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Straat"
+            android:text="@{patient.street}"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/houseNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="huisnr."
+            android:text="@{patient.houseNumber}"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/zipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postcode"
+            android:text="@{patient.zipCode}"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Woonplaats"
+            android:text="@{patient.city}"/>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefoon"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:text="@{patient.email}"/>
+
+        <EditText
+            android:id="@+id/birthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Geboortedatum"
+            android:inputType="date"
+            />
+
+        <EditText
+            android:id="@+id/bsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="BSN"
+            android:inputType="number"
+            android:text="@{patient.bsn}"/>
+
+        <EditText
+            android:id="@+id/insCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verzekeringsmaatschappij"
+            />
+
+        <EditText
+            android:id="@+id/insNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verzekeringsnummer"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/saveNewPatient"
+            android:text="opslaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/checkData"
+            android:text="check data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
+
+</FrameLayout>
+</layout>
